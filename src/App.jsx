@@ -1,6 +1,7 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Registro from './views/Registro';
+import Carrito from './views/carrito/Carrito';
+// import Registro from './views/Registro';
 // import Login from './views/Login';
 // import DetalleProducto from './views/DetalleProducto';
 // import Inicio from './views/inicio/Inicio'
@@ -17,7 +18,8 @@ function App() {
       {/* <Footer></Footer> */}
       {/* <DetalleProducto></DetalleProducto> */}
       {/* <Login></Login> */}
-      <Registro></Registro>
+      {/* <Registro></Registro> */}
+      <Carrito></Carrito>
     </>
   )
 }
