@@ -1,6 +1,7 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CrearUsuario from './views/AdministradorUsuario/CrearUsuario';
+import UsuarioAdministrador from './views/AdministradorUsuario/UsuarioAdministrador';
+// import CrearUsuario from './views/AdministradorUsuario/CrearUsuario';
 // import Carrito from './views/carrito/Carrito';
 // import Registro from './views/Registro';
 // import Login from './views/Login';
@@ -21,7 +22,8 @@ function App() {
       {/* <Login></Login> */}
       {/* <Registro></Registro> */}
       {/* <Carrito></Carrito> */}
-      <CrearUsuario></CrearUsuario>
+      {/* <CrearUsuario></CrearUsuario> */}
+      <UsuarioAdministrador></UsuarioAdministrador>
     </>
   )
 }
