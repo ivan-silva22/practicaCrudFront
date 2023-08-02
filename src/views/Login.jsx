@@ -3,6 +3,7 @@ import { Container, Form, Button, FormGroup } from "react-bootstrap";
 const Login = () => {
   return (
     <Container className="w-50 border border-1 p-4">
+        <h3>Iniciar sesion </h3>
       <Form>
         <Form.Group className="mb-3" controlId="exampleForm.ControlEmail">
           <Form.Label>Correo electronico</Form.Label>
@@ -16,6 +17,9 @@ const Login = () => {
             <Button type='submit' variant='primary' className="w-50">Iniciar Sesion</Button>
         </FormGroup>
       </Form>
+      <div className="mt-3 text-center">
+        <p>Aun no tienes cuenta? <a href="#">Registrate</a> </p>
+      </div>
     </Container>
   );
 };
