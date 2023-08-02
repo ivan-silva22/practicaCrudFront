@@ -1,6 +1,7 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import DetalleProducto from './views/DetalleProducto';
+import Login from './views/Login';
+// import DetalleProducto from './views/DetalleProducto';
 // import Inicio from './views/inicio/Inicio'
 // import Menu from './common/Menu';
 // import Footer from './common/Footer';
@@ -13,7 +14,8 @@ function App() {
       {/* <Inicio></Inicio> */}
       {/* <Menu></Menu> */}
       {/* <Footer></Footer> */}
-      <DetalleProducto></DetalleProducto>
+      {/* <DetalleProducto></DetalleProducto> */}
+      <Login></Login>
     </>
   )
 }
