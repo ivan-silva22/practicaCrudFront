@@ -1,4 +1,5 @@
 import { Container, Nav, Navbar, NavDropdown} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
     return (
@@ -8,17 +9,17 @@ const Menu = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home">Inicio</Nav.Link>
+            <Link className='navbar-nav nav-link' to={'/'}>Inicio</Link>
             <NavDropdown title="Administrador" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Usuarios</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
+              <Link className='navbar-nav nav-link' to={'/administradorusuarios'}>Usuarios</Link>
+              <Link className='navbar-nav nav-link' to={'/administradorproductos'}>
                 Productos
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Pedidos</NavDropdown.Item>
+              </Link>
+              <Link className='navbar-nav nav-link' to={'/administrarpedidos'}>Pedidos</Link>
             </NavDropdown>
-            <Nav.Link href="#home">Carrito</Nav.Link>
-            <Nav.Link href="#home">Login</Nav.Link>
-            <Nav.Link href="#home">Registrate</Nav.Link>
+            <Link className='navbar-nav nav-link' to={'/carrito'} >Carrito</Link>
+            <Link className='navbar-nav nav-link' to={'/login'} >Login</Link>
+            <Link className='navbar-nav nav-link' to={'/registro'}>Registrate</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

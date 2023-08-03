@@ -2,7 +2,7 @@ import { Container, Form, Button, FormGroup } from "react-bootstrap";
 
 const CrearUsuario = () => {
   return (
-    <Container className="w-50 border border-1 p-4">
+    <Container className="w-50 border border-1 p-4 main font">
       <h3>Crear usuario </h3>
       <Form>
         <Form.Group className="mb-3" controlId="exampleForm.ControlEmail">

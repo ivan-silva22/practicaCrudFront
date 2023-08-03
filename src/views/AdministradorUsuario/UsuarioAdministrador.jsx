@@ -3,7 +3,7 @@ import ItemUsuario from "./ItemUsuario";
 
 const UsuarioAdministrador = () => {
   return (
-    <Container>
+    <Container className="main font">
         <div className='my-3'>
             <Button variant="primary">Crear usuario</Button>
         </div>

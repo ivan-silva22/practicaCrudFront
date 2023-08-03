@@ -3,8 +3,8 @@ import logo from '../assets/logo.png';
 
 const Footer = () => {
     return (
-        <div>
-            <Row className="bg-dark  text-center">
+        <div className=''>
+            <Row className="bg-body-tertiary  text-center p-3 font">
         <Col>
             <img className='logo' src={logo} alt="logo" />
         </Col>

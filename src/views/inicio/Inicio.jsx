@@ -4,7 +4,7 @@ import CardProductos from "./CardProductos";
 
 const Inicio = () => {
   return (
-    <>
+    <section className='main font'>
       <Slaider></Slaider>
       <Container className="my-5">
         <h1>Productos Disponibles</h1>
@@ -13,7 +13,7 @@ const Inicio = () => {
           <Col><CardProductos></CardProductos></Col>
         </Row>
       </Container>
-    </>
+    </section>
   );
 };
 

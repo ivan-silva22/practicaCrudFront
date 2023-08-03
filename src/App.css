@@ -5,7 +5,7 @@
     height: 600px;
 }
 
-p{
+.font{
     
     font-family: 'Hind', sans-serif;
 }
@@ -13,4 +13,15 @@ p{
 .logo{
     width: 150px;
     border-radius: 50%;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.main{
+    flex-grow: 1;
 }

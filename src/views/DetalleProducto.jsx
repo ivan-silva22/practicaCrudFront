@@ -2,7 +2,8 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
 const DetalleProducto = () => {
   return (
-    <Container>
+    <Container className='my-4 main font'>
+        <h3>Detalle Producto</h3>
       <Card className="p-3">
         <Row>
           <Col>

@@ -1,16 +1,24 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import CrearProducto from './views/AdministradorProductos/CrearProducto';
-import EditarProducto from './views/AdministradorProductos/EditarProducto';
+// import EditarProducto from './views/AdministradorProductos/EditarProducto';
 // import Administrador from './views/AdministradorProductos/Administrador';
 // import EditarUsuario from './views/AdministradorUsuario/EditarUsuario';
 // import UsuarioAdministrador from './views/AdministradorUsuario/UsuarioAdministrador';
 // import CrearUsuario from './views/AdministradorUsuario/CrearUsuario';
 // import Carrito from './views/carrito/Carrito';
 // import Registro from './views/Registro';
-// import Login from './views/Login';
+import Login from './views/Login';
 // import DetalleProducto from './views/DetalleProducto';
-// import Inicio from './views/inicio/Inicio'
+import Inicio from './views/inicio/Inicio'
+import Registro from './views/Registro';
+import Menu from './common/Menu';
+import Footer from './common/Footer';
+import DetalleProducto from './views/DetalleProducto';
+import Administrador from './views/AdministradorProductos/Administrador';
+import UsuarioAdministrador from './views/AdministradorUsuario/UsuarioAdministrador';
+import Carrito from './views/carrito/Carrito';
 // import Menu from './common/Menu';
 // import Footer from './common/Footer';
 
@@ -18,8 +26,19 @@ function App() {
  
 
   return (
-    <>
-      {/* <Inicio></Inicio> */}
+    <BrowserRouter>
+      <Menu></Menu>
+      <Routes>
+          <Route exact path='/' element={<Inicio></Inicio>}></Route>
+          <Route exact path='/login' element={<Login></Login>}></Route>
+          <Route exact path='/registro' element={<Registro></Registro>}></Route>
+          <Route exact path='/detalle' element={<DetalleProducto></DetalleProducto>}></Route>
+          <Route exact path='/administradorproductos' element={<Administrador></Administrador>}></Route>
+          <Route exact path='/administradorusuarios' element={<UsuarioAdministrador></UsuarioAdministrador>}></Route>
+          <Route exact path='/carrito' element={<Carrito></Carrito>}></Route>
+      </Routes>
+      <Footer></Footer>
+      {/*  */}
       {/* <Menu></Menu> */}
       {/* <Footer></Footer> */}
       {/* <DetalleProducto></DetalleProducto> */}
@@ -31,8 +50,8 @@ function App() {
       {/* <EditarUsuario></EditarUsuario> */}
       {/* <Administrador></Administrador> */}
       {/* <CrearProducto></CrearProducto> */}
-      <EditarProducto></EditarProducto>
-    </>
+      {/* <EditarProducto></EditarProducto> */}
+    </BrowserRouter>
   )
 }
 

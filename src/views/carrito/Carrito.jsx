@@ -3,7 +3,7 @@ import ItemCarrito from "./ItemCarrito";
 
 const Carrito = () => {
   return (
-    <Container>
+    <Container className="main font">
         <h3>Carrito</h3>
         <hr />
       <Row>

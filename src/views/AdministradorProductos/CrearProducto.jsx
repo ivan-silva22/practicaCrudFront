@@ -2,7 +2,7 @@ import { Container, Form, Button, FormGroup } from "react-bootstrap";
 
 const CrearProducto = () => {
     return (
-        <Container className="w-50 border border-1 p-4">
+        <Container className="w-50 border border-1 p-4 main">
         <h3>Crear producto </h3>
         <Form>
           <Form.Group className="mb-3" controlId="exampleForm.ControlNombre">

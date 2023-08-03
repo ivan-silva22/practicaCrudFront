@@ -2,9 +2,9 @@ import { Container, Form, Button, FormGroup } from "react-bootstrap";
 
 const Registro = () => {
     return (
-        <Container className="w-50 border border-1 p-4">
+        <Container className="w-50 border border-1 p-4 main my-5">
             <h3>Registro</h3>
-      <Form>
+      <Form className='font'>
         <Form.Group className="mb-3" controlId="exampleForm.ControlEmail">
           <Form.Label>Nombre*</Form.Label>
           <Form.Control type="text" placeholder="Jose" />
