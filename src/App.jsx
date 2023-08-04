@@ -19,6 +19,7 @@ import DetalleProducto from './views/DetalleProducto';
 import Administrador from './views/AdministradorProductos/Administrador';
 import UsuarioAdministrador from './views/AdministradorUsuario/UsuarioAdministrador';
 import Carrito from './views/carrito/Carrito';
+import Pedidos from './views/AdministradorPedidos/Pedidos';
 // import Menu from './common/Menu';
 // import Footer from './common/Footer';
 
@@ -35,6 +36,7 @@ function App() {
           <Route exact path='/detalle' element={<DetalleProducto></DetalleProducto>}></Route>
           <Route exact path='/administradorproductos' element={<Administrador></Administrador>}></Route>
           <Route exact path='/administradorusuarios' element={<UsuarioAdministrador></UsuarioAdministrador>}></Route>
+          <Route exact path='/administradorpedidos' element={<Pedidos></Pedidos>}></Route>
           <Route exact path='/carrito' element={<Carrito></Carrito>}></Route>
       </Routes>
       <Footer></Footer>

@@ -3,8 +3,9 @@ import ItemProducto from "./ItemProducto";
 
 const Administrador = () => {
     return (
-        <Container className="main font">
-        <div className='my-3'>
+        <Container className="main font my-5">
+          <h3>Administrar productos</h3>
+        <div className='mb-2'>
             <Button variant="primary">Crear Producto</Button>
         </div>
       <Table striped bordered hover responsive className="text-center">

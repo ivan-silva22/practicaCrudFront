@@ -1,8 +1,10 @@
 import { Container, Table } from "react-bootstrap";
+import ItemPedidos from "./ItemPedidos";
 
 const Pedidos = () => {
   return (
-    <Container>
+    <Container className="my-5 font">
+        <h3>Administrar de pedidos</h3>
       <Table striped bordered hover responsive className="text-center">
         <thead>
           <tr>
@@ -15,7 +17,7 @@ const Pedidos = () => {
             <th>Opciones</th>
           </tr>
         </thead>
-        <ItemProducto></ItemProducto>
+        <ItemPedidos></ItemPedidos>
       </Table>
     </Container>
   );

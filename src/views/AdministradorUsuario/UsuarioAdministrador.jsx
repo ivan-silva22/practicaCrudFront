@@ -3,8 +3,9 @@ import ItemUsuario from "./ItemUsuario";
 
 const UsuarioAdministrador = () => {
   return (
-    <Container className="main font">
-        <div className='my-3'>
+    <Container className="main font my-5">
+      <h3>Administrar usuarios</h3>
+        <div className='mb-2'>
             <Button variant="primary">Crear usuario</Button>
         </div>
       <Table striped bordered hover responsive className="text-center">
