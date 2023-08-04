@@ -7,7 +7,8 @@ const ItemUsuario = () => {
             <tr>
             <td>1</td>
             <td>Ivan</td>
-            <td>Silva</td>
+            <td>silvaivan280@gmail.com</td>
+            <td>Activo</td>
             <td>Administrador</td>
             <td className="d-flex justify-content-evenly">
               <Button variant="warning">Editar</Button>

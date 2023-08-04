@@ -5,7 +5,7 @@ const Menu = () => {
     return (
         <Navbar expand="lg" className="bg-body-tertiary border-bottom">
       <Container>
-        <Navbar.Brand href="#home">Tucu Tecno</Navbar.Brand>
+        <Link className='navbar-nav nav-link' to={'/'}>Tucu Tecno</Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
@@ -15,7 +15,7 @@ const Menu = () => {
               <Link className='navbar-nav nav-link' to={'/administradorproductos'}>
                 Productos
               </Link>
-              <Link className='navbar-nav nav-link' to={'/administrarpedidos'}>Pedidos</Link>
+              <Link className='navbar-nav nav-link' to={'/administradorpedidos'}>Pedidos</Link>
             </NavDropdown>
             <Link className='navbar-nav nav-link' to={'/carrito'} >Carrito</Link>
             <Link className='navbar-nav nav-link' to={'/login'} >Login</Link>

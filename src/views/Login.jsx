@@ -1,5 +1,5 @@
 import { Container, Form, Button, FormGroup } from "react-bootstrap";
-
+import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <Container className="w-50 border border-1 p-4 main my-5">
@@ -18,7 +18,7 @@ const Login = () => {
         </FormGroup>
       </Form>
       <div className="mt-3 text-center">
-        <p>Aun no tienes cuenta? <a href="#">Registrate</a> </p>
+        <p>Aun no tienes cuenta? <Link to={'/registro'}>Registrate</Link> </p>
       </div>
     </Container>
   );

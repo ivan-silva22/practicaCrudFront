@@ -13,8 +13,9 @@ const UsuarioAdministrador = () => {
           <tr>
             <th>#</th>
             <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Rol</th>
+            <th>Email</th>
+            <th>Estado</th>
+            <th>Perfil</th>
             <th>Opciones</th>
           </tr>
         </thead>

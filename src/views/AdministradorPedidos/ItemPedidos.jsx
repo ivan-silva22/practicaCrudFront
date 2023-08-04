@@ -6,12 +6,11 @@ const ItemPedidos = () => {
             <tbody>
             <tr>
             <td>1</td>
-            <td>Teclado</td>
-            <td>Alguna descripcion</td>
+            <td>Ivan</td>
+            <td>04/08/2023</td>
             <td>
-            https://images.pexels.com/photos/3829226/pexels-photo-3829226.jpeg
+            Teclado
             </td>
-            <td>$2500</td>
             <th>Pendiente</th>
             <td>
               <Button variant="danger">Enviar pedido</Button>

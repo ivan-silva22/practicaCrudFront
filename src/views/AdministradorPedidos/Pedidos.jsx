@@ -3,16 +3,15 @@ import ItemPedidos from "./ItemPedidos";
 
 const Pedidos = () => {
   return (
-    <Container className="my-5 font">
+    <Container className="my-5 font main">
         <h3>Administrar de pedidos</h3>
       <Table striped bordered hover responsive className="text-center">
         <thead>
           <tr>
             <th>#</th>
-            <th>Nombre</th>
-            <th>Descripcion</th>
-            <th>URL de Imagen</th>
-            <th>Precio</th>
+            <th>Usuario</th>
+            <th>Fecha</th>
+            <th>Producto</th>
             <th>Estado</th>
             <th>Opciones</th>
           </tr>

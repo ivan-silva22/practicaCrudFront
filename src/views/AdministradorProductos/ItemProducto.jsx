@@ -12,6 +12,7 @@ const ItemProducto = () => {
             https://images.pexels.com/photos/3829226/pexels-photo-3829226.jpeg
             </td>
             <td>$2500</td>
+            <td>Activo</td>
             <td className="d-flex justify-content-evenly">
               <Button variant="warning">Editar</Button>
               <Button variant="danger">Eliminar</Button>
