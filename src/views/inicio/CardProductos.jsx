@@ -12,7 +12,7 @@ const CardProductos = () => {
             Some quick example text to build on the card title and make up the
             bulk of the cards content.
           </Card.Text>
-          <Link className="btn btn-danger" to={'/detalle'}>Ver más...</Link>
+          <Link className="btn btn-outline-primary" to={'/detalle'}>Ver más...</Link>
         </Card.Body>
       </Card>
     </>

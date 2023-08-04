@@ -1,25 +1,26 @@
 import { Container, Nav, Navbar, NavDropdown} from 'react-bootstrap';
+import logo from "../assets/logo.jpg";
 import { Link } from 'react-router-dom';
 
 const Menu = () => {
     return (
-        <Navbar expand="lg" className="bg-body-tertiary border-bottom">
+        <Navbar expand="lg" className="bg-footer-nav shadow-lg">
       <Container>
-        <Link className='navbar-nav nav-link' to={'/'}>Tucu Tecno</Link>
+        <Link className='navbar-nav nav-link' to={'/'}> <img className="logoMenu" src={logo} alt="logo" /> </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Link className='navbar-nav nav-link' to={'/'}>Inicio</Link>
-            <NavDropdown title="Administrador" id="basic-nav-dropdown">
-              <Link className='navbar-nav nav-link' to={'/administradorusuarios'}>Usuarios</Link>
-              <Link className='navbar-nav nav-link' to={'/administradorproductos'}>
+            <Link className='navbar-nav nav-link nav-link-color' to={'/'}>Inicio</Link>
+            <NavDropdown className='nav-link-color' title="Administrador" id="basic-nav-dropdown">
+              <Link className='nav' to={'/administradorusuarios'}>Usuarios</Link>
+              <Link className='nav' to={'/administradorproductos'}>
                 Productos
               </Link>
-              <Link className='navbar-nav nav-link' to={'/administradorpedidos'}>Pedidos</Link>
+              <Link className='nav' to={'/administradorpedidos'}>Pedidos</Link>
             </NavDropdown>
-            <Link className='navbar-nav nav-link' to={'/carrito'} >Carrito</Link>
-            <Link className='navbar-nav nav-link' to={'/login'} >Login</Link>
-            <Link className='navbar-nav nav-link' to={'/registro'}>Registrate</Link>
+            <Link className='navbar-nav nav-link nav-link-color' to={'/carrito'} >Carrito</Link>
+            <Link className='navbar-nav nav-link nav-link-color' to={'/login'} >Login</Link>
+            <Link className='navbar-nav nav-link nav-link-color' to={'/registro'}>Registrate</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
