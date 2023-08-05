@@ -2,7 +2,7 @@ import { Container, Form, Button, FormGroup } from "react-bootstrap";
 
 const Registro = () => {
     return (
-        <Container className="w-50 border border-1 p-4 main my-5">
+        <Container className="p-4 main my-5">
             <h3>Registro</h3>
       <Form className='font'>
         <Form.Group className="mb-3" controlId="exampleForm.ControlEmail">
@@ -22,7 +22,7 @@ const Registro = () => {
           <Form.Control type="password" placeholder="********" />
         </Form.Group>
         <FormGroup className="text-center">
-            <Button type='submit' variant='primary' className="w-50">Registrarse</Button>
+            <Button type='submit' variant='primary' className="boton" >Registrarse</Button>
         </FormGroup>
       </Form>
     </Container>

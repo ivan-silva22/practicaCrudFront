@@ -6,12 +6,12 @@ const Footer = () => {
   return (
     <div className="footer">
       <Row className="bg-footer-nav text-center p-3 font shadow-lg p-3 footer">
-        <Col>
+        <Col sm={12} md={4}>
           <div className="my-4">
             <img className="logo" src={logo} alt="logo" />
           </div>
         </Col>
-        <Col>
+        <Col sm={12} md={4}>
           <div className="my-2">
             <Link className="navbar-nav nav-link nav-link-color" to={"/quienessomos"}>
               Quienes somos
@@ -21,7 +21,7 @@ const Footer = () => {
             <p className="text-white">Correro: mail@mail.com</p>
           </div>
         </Col>
-        <Col>
+        <Col sm={12} md={4}>
           <div className="my-3">
             <p className="text-white">Seguinos en nuestras redes:</p>
 

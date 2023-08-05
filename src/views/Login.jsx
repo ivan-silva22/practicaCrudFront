@@ -2,7 +2,7 @@ import { Container, Form, Button, FormGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
 const Login = () => {
   return (
-    <Container className="w-50 border border-1 p-4 main my-5">
+    <Container className=" p-4 main my-5">
         <h3>Iniciar sesion </h3>
       <Form className="font">
         <Form.Group className="mb-3" controlId="exampleForm.ControlEmail">
@@ -14,7 +14,7 @@ const Login = () => {
           <Form.Control type="password" placeholder="********" />
         </Form.Group>
         <FormGroup className="text-center">
-            <Button type='submit' variant='primary' className="w-50">Iniciar Sesion</Button>
+            <Button type='submit' variant='primary' className='boton' >Iniciar Sesion</Button>
         </FormGroup>
       </Form>
       <div className="mt-3 text-center">
