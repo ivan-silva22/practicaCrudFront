@@ -79,14 +79,14 @@ const CrearUsuario = () => {
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlPassword">
           <Form.Select aria-label="Default select example"
-          {...register("categoria", {
-            required: "La categoria es obligatoria",
+          {...register("perfil", {
+            required: "El perfil es obligatorio",
           })}
           >
             <option value="administrador">Administrador</option>
           </Form.Select>
           <Form.Text className="text-danger">
-          {errors.categoria?.message}
+          {errors.perfil?.message}
           </Form.Text>
         </Form.Group>
         <FormGroup className="text-center">

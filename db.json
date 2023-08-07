@@ -1,9 +1,28 @@
 {
-    "productos": [
-      { "id": 1, "nombreProducto": "Teclado gamer HyperX Alloy Origins", "descripcion": "descripcion del producto", "imagen": "https://images.pexels.com/photos/3829226/pexels-photo-3829226.jpeg", "precio": 2000 }
-    ],
-    "usuarios": [
-      { "id": 1, "nombreUsuario": "admin","apellidoUsuario": "adminApellido", "email": "admin@email.com", "password": "Admin123", "perfil": "administrador"  },
-      { "id": 2, "nombreUsuario": "admin","apellidoUsuario": "adminApellido", "email": "admin@email.com", "password": "admin123", "perfil": "cliente"  }
-    ]
-  }
+  "productos": [
+    {
+      "id": 1,
+      "nombreProducto": "Teclado gamer HyperX Alloy Origins",
+      "descripcion": "descripcion del producto",
+      "imagen": "https://images.pexels.com/photos/3829226/pexels-photo-3829226.jpeg",
+      "precio": 2000
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nombreUsuario": "admin",
+      "apellidoUsuario": "adminApellido",
+      "email": "admin@rollingcode.com",
+      "password": "Admin123",
+      "perfil": "administrador"
+    },
+    {
+        "id": 2,
+        "nombreUsuario": "ivan",
+        "apellidoUsuario": "silva",
+        "email": "silvaivan280@gmail.com",
+        "password": "Admin123"
+      }
+  ]
+}
