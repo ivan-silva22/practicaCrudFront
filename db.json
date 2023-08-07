@@ -3,7 +3,7 @@
       { "id": 1, "nombreProducto": "Teclado gamer HyperX Alloy Origins", "descripcion": "descripcion del producto", "imagen": "https://images.pexels.com/photos/3829226/pexels-photo-3829226.jpeg", "precio": 2000 }
     ],
     "usuarios": [
-      { "id": 1, "nombreUsuario": "admin","apellidoUsuario": "adminApellido", "email": "admin@email.com", "password": "admin123", "perfil": "administrador"  },
+      { "id": 1, "nombreUsuario": "admin","apellidoUsuario": "adminApellido", "email": "admin@email.com", "password": "Admin123", "perfil": "administrador"  },
       { "id": 2, "nombreUsuario": "admin","apellidoUsuario": "adminApellido", "email": "admin@email.com", "password": "admin123", "perfil": "cliente"  }
     ]
   }
