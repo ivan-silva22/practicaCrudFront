@@ -1,6 +1,10 @@
 import { Container, Form, Button, FormGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { iniciarSesion } from "../helpers/queries";
 const Login = () => {
+
+  iniciarSesion()
+
   return (
     <Container className=" p-4 main my-5">
         <h3>Iniciar sesion </h3>
