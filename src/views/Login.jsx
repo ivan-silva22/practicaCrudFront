@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 
 
-const Login = () => {
+const Login = ({ setUsuarioLogueado }) => {
   const {
     register,
     handleSubmit,
@@ -21,6 +21,7 @@ const Login = () => {
         sessionStorage.setItem('usuario', JSON.stringify(respuesta.nombreUsuario));
         sessionStorage.setItem('email', JSON.stringify(respuesta.email));
         Swal.fire("Bienvenido!", `${respuesta.nombreUsuario} iniciaste sesion correctamente`, "success");
+        setUsuarioLogueado(respuesta);
         if(respuesta.perfil === "administrador"){
           navegacion('/administradorproductos');
         }else{
