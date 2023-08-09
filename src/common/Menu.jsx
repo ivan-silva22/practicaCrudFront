@@ -1,8 +1,17 @@
 import { Container, Nav, Navbar, NavDropdown, Button } from 'react-bootstrap';
 import logo from "../assets/logo.jpg";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Menu = ({ usuarioLogueado, setUsuarioLogueado}) => {
+
+  const navegacion = useNavigate();
+
+  const cerrarSesion = () =>{
+    setUsuarioLogueado({});
+    sessionStorage.removeItem('usuario');
+    navegacion('/');
+  }
+
     return (
         <Navbar expand="lg" className="bg-footer-nav shadow-lg">
       <Container>
@@ -21,7 +30,7 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado}) => {
                       </Link>
                       <Link className='nav' to={'/administradorpedidos'}>Pedidos</Link>
                     </NavDropdown>
-                    <Button className='navbar-nav nav-link nav-link-color'>Cerrar sesion</Button>
+                    <Button className='navbar-nav nav-link nav-link-color' onClick={cerrarSesion}>Cerrar sesion</Button>
                 </>
               ):(usuarioLogueado.nombreUsuario)?(
                 <>

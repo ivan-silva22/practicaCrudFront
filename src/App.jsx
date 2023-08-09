@@ -25,8 +25,10 @@ import { useState } from 'react';
 // import Footer from './common/Footer';
 
 function App() {
+
+  const usuario = JSON.parse(sessionStorage.getItem('usuario')) || {};
  
-  const [usuarioLogueado, setUsuarioLogueado] = useState({});
+  const [usuarioLogueado, setUsuarioLogueado] = useState(usuario);
 
   return (
     <BrowserRouter>
