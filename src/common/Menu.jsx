@@ -24,11 +24,11 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado}) => {
               (usuarioLogueado.perfil === "administrador")?(
                 <>
                     <NavDropdown className='nav-link-color' title="Administrador" id="basic-nav-dropdown">
-                      <Link className='nav' to={'/administradorusuarios'}>Usuarios</Link>
+                      <Link className='nav' to={'/administradorproductos/administradorusuarios'}>Usuarios</Link>
                       <Link className='nav' to={'/administradorproductos'}>
                       Productos
                       </Link>
-                      <Link className='nav' to={'/administradorpedidos'}>Pedidos</Link>
+                      <Link className='nav' to={'/administradorproductos/administradorpedidos'}>Pedidos</Link>
                     </NavDropdown>
                     <Button className='navbar-nav nav-link nav-link-color' onClick={cerrarSesion}>Cerrar sesion</Button>
                 </>

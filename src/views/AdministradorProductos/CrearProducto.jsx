@@ -8,7 +8,7 @@ const CrearProducto = () => {
     return (
         <Container className="w-50 border border-1 p-4 main">
         <h3>Crear producto </h3>
-        <Form  onSubmit={handleSubmit(onSubmit)}>
+        <Form  onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="exampleForm.ControlNombre">
             <Form.Label>Nombre*</Form.Label>
             <Form.Control type="text" placeholder="Teclado"
