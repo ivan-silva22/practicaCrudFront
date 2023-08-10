@@ -5,22 +5,6 @@
       "nombreProducto": "Teclado gamer HyperX Alloy Origins",
       "descripcion": "descripcion del producto",
       "imagen": "https://images.pexels.com/photos/3829226/pexels-photo-3829226.jpeg",
-      "estado": "activo",
-      "precio": 2000
-    },
-    {
-      "id": 2,
-      "nombreProducto": "Teclado gamer HyperX Alloy Origins",
-      "descripcion": "descripcion del producto",
-      "imagen": "https://images.pexels.com/photos/3829226/pexels-photo-3829226.jpeg",
-      "estado": "activo",
-      "precio": 2000
-    },
-    {
-      "id": 2,
-      "nombreProducto": "Teclado gamer HyperX Alloy Origins",
-      "descripcion": "descripcion del producto",
-      "imagen": "https://images.pexels.com/photos/3829226/pexels-photo-3829226.jpeg",
       "estado": "inactivo",
       "precio": 2000
     }
@@ -35,11 +19,11 @@
       "perfil": "administrador"
     },
     {
-        "id": 2,
-        "nombreUsuario": "ivan",
-        "apellidoUsuario": "silva",
-        "email": "silvaivan280@gmail.com",
-        "password": "Admin123"
-      }
+      "id": 2,
+      "nombreUsuario": "ivan",
+      "apellidoUsuario": "silva",
+      "email": "silvaivan280@gmail.com",
+      "password": "Admin123"
+    }
   ]
 }
