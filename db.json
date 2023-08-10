@@ -5,6 +5,15 @@
       "nombreProducto": "Teclado gamer HyperX Alloy Origins",
       "descripcion": "descripcion del producto",
       "imagen": "https://images.pexels.com/photos/3829226/pexels-photo-3829226.jpeg",
+      "estado": "activo",
+      "precio": 2000
+    },
+    {
+      "id": 2,
+      "nombreProducto": "Teclado gamer HyperX Alloy Origins",
+      "descripcion": "descripcion del producto",
+      "imagen": "https://images.pexels.com/photos/3829226/pexels-photo-3829226.jpeg",
+      "estado": "activo",
       "precio": 2000
     }
   ],

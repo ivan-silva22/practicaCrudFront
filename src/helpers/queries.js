@@ -1,4 +1,5 @@
 const apiUsuario = import.meta.env.VITE_API_USUARIO;
+const apiProducto = import.meta.env.VITE_API_PRODUCTO;
 
 export const iniciarSesion = async (usuario) =>{
     try {
@@ -18,6 +19,16 @@ export const iniciarSesion = async (usuario) =>{
             console.log('el email es incorrecto')
             return null;
         }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export const listarProductos = async () =>{
+    try {
+        const respuesta = await fetch(apiProducto);
+        const arrayProductos = await respuesta.json();
+        return arrayProductos;
     } catch (error) {
         console.log(error);
     }
