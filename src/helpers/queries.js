@@ -33,3 +33,15 @@ export const listarProductos = async () =>{
         console.log(error);
     }
 }
+
+
+export const eliminarProducto = async (id) =>{
+    try {
+        const respuesta = await fetch(`${apiProducto}/${id}`,{
+            method: 'DELETE'
+        })
+        return respuesta;
+    } catch (error) {
+        console.log(error);
+    }
+}
