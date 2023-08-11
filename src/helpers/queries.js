@@ -34,6 +34,45 @@ export const listarProductos = async () =>{
     }
 }
 
+export const agregarProducto = async (producto) =>{
+    try {
+        const respuesta = await fetch(apiProducto, {
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(producto)
+        });
+        return respuesta;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export const listarProducto = async (id) =>{
+    try {
+        const respuesta = await fetch(`${apiProducto}/${id}`);
+        const producto = await respuesta.json();
+        return producto;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export const editarProducto = async (producto, id) =>{
+    try {
+        const respuesta = await fetch(`${apiProducto}/${id}`, {
+            method: 'PUT',
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(producto)
+        });
+        return respuesta;
+    } catch (error) {
+        console.log(error);
+    }
+}
 
 export const eliminarProducto = async (id) =>{
     try {

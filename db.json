@@ -1,12 +1,28 @@
 {
   "productos": [
     {
-      "id": 1,
-      "nombreProducto": "Teclado gamer HyperX Alloy Origins",
-      "descripcion": "descripcion del producto",
-      "imagen": "https://images.pexels.com/photos/3829226/pexels-photo-3829226.jpeg",
-      "estado": "inactivo",
-      "precio": 2000
+      "nombreProducto": "Teclado",
+      "descripcionProducto": "Teclado gamer",
+      "imagenProducto": "https://images.pexels.com/photos/3829226/pexels-photo-3829226.jpeg",
+      "precioProducto": "2500",
+      "estadoProducto": "activo",
+      "id": 3
+    },
+    {
+      "nombreProducto": "Monitor",
+      "descripcionProducto": "Monitor Gamers",
+      "imagenProducto": "https://images.pexels.com/photos/3829226/pexels-photo-3829226.jpeg",
+      "precioProducto": "5000",
+      "estadoProducto": "inactivo",
+      "id": 4
+    },
+    {
+      "nombreProducto": "Asus Notebook",
+      "descripcionProducto": "Asus Notebook X515ea I7 15.6 Fhd 512g 8gb Free",
+      "imagenProducto": "https://images.pexels.com/photos/3829226/pexels-photo-3829226.jpeg",
+      "precioProducto": "10000",
+      "estadoProducto": "activo",
+      "id": 5
     }
   ],
   "usuarios": [

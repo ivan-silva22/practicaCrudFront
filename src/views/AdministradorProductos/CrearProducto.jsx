@@ -1,14 +1,26 @@
 import { Container, Form, Button, FormGroup } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import { agregarProducto } from "../../helpers/queries";
+import Swal from "sweetalert2";
 
 const CrearProducto = () => {
   const {register, handleSubmit, formState: {errors}, reset} = useForm();
-
+  
+  const onSubmit = (productoNuevo) =>{
+    agregarProducto(productoNuevo).then((respuesta)=>{
+      if(respuesta && respuesta.status === 201){
+        Swal.fire('Producto creado', `El producto ${productoNuevo.nombreProducto} fue creado correctamente`, 'success');
+        reset();
+      }else{
+        Swal.fire('Ocurrio un error', `El producto ${productoNuevo.nombreProducto} no fue creado, intentelo mas tarde`, 'error');
+      }
+    })
+  }
 
     return (
         <Container className="w-50 border border-1 p-4 main">
         <h3>Crear producto </h3>
-        <Form  onSubmit={handleSubmit}>
+        <Form  onSubmit={handleSubmit((onSubmit))}>
           <Form.Group className="mb-3" controlId="exampleForm.ControlNombre">
             <Form.Label>Nombre*</Form.Label>
             <Form.Control type="text" placeholder="Teclado"
@@ -61,15 +73,15 @@ const CrearProducto = () => {
           <Form.Group className="mb-3" controlId="exampleForm.ControlPrecio">
             <Form.Label>Precio*</Form.Label>
             <Form.Control type="number" placeholder="2000"
-            {...register("precio", {
+            {...register("precioProducto", {
               required: "El precio del producto es obligatorio",
               min: {
                 value: 1,
                 message: "El precio minimo es de $1",
               },
               max: {
-                value: 10000,
-                message: "El precio maximo es de $10000",
+                value: 100000000,
+                message: "El precio maximo es de $10000000",
               },
             })}
             />
@@ -77,6 +89,21 @@ const CrearProducto = () => {
           {errors.precio?.message}
           </Form.Text>
           </Form.Group>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlEstado">
+          <Form.Label>Estado*</Form.Label>
+          <Form.Select aria-label="Default select example"
+          {...register("estadoProducto", {
+            required: "El estado es obligatorio",
+          })}
+          >
+          <option value="">Seleccione una opción</option>
+            <option value="activo">Activo</option>
+            <option value="inactivo">Inactivo</option>
+          </Form.Select>
+          <Form.Text className="text-danger">
+          {errors.estado?.message}
+          </Form.Text>
+        </Form.Group>
           <FormGroup className="text-center">
             <Button type="submit" variant="primary" className="w-50">
               Guardar

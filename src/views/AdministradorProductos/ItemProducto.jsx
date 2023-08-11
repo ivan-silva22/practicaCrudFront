@@ -1,6 +1,7 @@
 import { Button } from "react-bootstrap";
 import Swal from "sweetalert2";
 import { eliminarProducto, listarProductos } from "../../helpers/queries";
+import { Link } from "react-router-dom";
 
 const ItemProducto = ({ producto, index, setProductos }) => {
 
@@ -42,14 +43,14 @@ const ItemProducto = ({ producto, index, setProductos }) => {
             <tr>
             <td>{index + 1}</td>
             <td>{producto.nombreProducto}</td>
-            <td>{producto.descripcion}</td>
+            <td>{producto.descripcionProducto}</td>
             <td>
-            {producto.imagen}
+            {producto.imagenProducto}
             </td>
-            <td>${producto.precio}</td>
-            <td>{producto.estado}</td>
+            <td>${producto.precioProducto}</td>
+            <td>{producto.estadoProducto}</td>
             <td className="d-flex justify-content-evenly">
-              <Button variant="warning">Editar</Button>
+              <Link className='btn btn-warning' to={'/administradorproductos/editar-producto/' + producto.id}>Editar</Link>
               <Button variant="danger" onClick={borrarProducto} >Eliminar</Button>
             </td>
             </tr>

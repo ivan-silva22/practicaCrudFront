@@ -33,7 +33,7 @@ function App() {
         <Route exact path="/registro" element={<Registro></Registro>}></Route>
         <Route
           exact
-          path="/detalle"
+          path="/detalle/:id"
           element={<DetalleProducto></DetalleProducto>}
         ></Route>
         <Route

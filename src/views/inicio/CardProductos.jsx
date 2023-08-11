@@ -1,21 +1,21 @@
-import { Card } from "react-bootstrap";
+import { Card, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const CardProductos = () => {
+const CardProductos = ( {producto} ) => {
+   
   return (
-    <>
+    <Col  md={4} ld={3}>
       <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src="https://images.pexels.com/photos/3829226/pexels-photo-3829226.jpeg" />
+        <Card.Img variant="top" src={producto.imagenProducto} title={producto.nombreProducto} />
         <Card.Body className="font">
-          <Card.Title>Teclado Gamers</Card.Title>
+          <Card.Title>{producto.nombreProducto}</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the cards content.
+            {producto.descripcionProducto}
           </Card.Text>
-          <Link className="btn btn-outline-primary" to={'/detalle'}>Ver más...</Link>
+          <Link className="btn btn-outline-primary" to={`/detalle/${producto.id}`}>Ver más...</Link>
         </Card.Body>
       </Card>
-    </>
+    </Col>
   );
 };
 
